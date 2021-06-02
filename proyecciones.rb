@@ -9,8 +9,8 @@ file.each do |d|
     array.push d.to_f
 end
 
-semestre1 = (array[0..5].sum * 1.1) 
-semestre2 = (array[6..11].sum * 1.2)
+semestre1 = (array[0..5].sum * 1.1) + (array[6..11].sum)
+semestre2 = (array[6..11].sum * 1.2) + (array[0..5].sum)
 
 output.write(semestre1.round(2))
 output.write("\n")
